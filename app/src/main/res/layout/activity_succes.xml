@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:background="#C5E4DC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/src1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/src1"
+            android:background="@drawable/layout_background"
+            >
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/blink0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Mission"
+                    android:layout_toRightOf="@+id/btn11"
+                    android:layout_below="@+id/blink0"
+                    android:textSize="35dp"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;&lt;"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/blink0"
+                    android:textColor="@color/teal_200"
+                    android:background="#00ff0000"
+                    />
+
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="30dp"
+                    android:layout_below="@id/btn11"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/l01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/b"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn01"
+                    android:backgroundTint="#F6F6F6"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img01"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/check"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mission_detail01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="도전과제 1"
+                            android:textSize="25dp"
+                            android:layout_toRightOf="@id/img01"
+                            android:layout_marginLeft="30dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/mission_detail02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30분 동안 운동하기"
+                            android:textSize="20dp"
+                            android:layout_below="@id/mission_detail01"
+                            android:layout_toRightOf="@id/img01"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="3dp"
+                            />
+                        <View
+                            android:id="@+id/mission_bar01"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail02"
+                            />
+
+                        <View
+                            android:id="@+id/mission_bar02"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail02"
+                            android:backgroundTint="#28AE2E"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l01"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn01"
+                    android:backgroundTint="#F6F6F6"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img11"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/clock"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mission_detail11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="도전과제 2"
+                            android:textSize="25dp"
+                            android:layout_toRightOf="@id/img11"
+                            android:layout_marginLeft="30dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/mission_detail12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="오늘 세끼 식단 인증하기"
+                            android:textSize="20dp"
+                            android:layout_below="@id/mission_detail11"
+                            android:layout_toRightOf="@id/img11"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="3dp"
+                            />
+                        <View
+                            android:id="@+id/mission_bar11"
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail12"
+                            />
+
+                        <View
+                            android:id="@+id/mission_bar12"
+                            android:layout_width="270dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail12"
+                            android:backgroundTint="#28AE2E"
+                        />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l02"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn01"
+                    android:backgroundTint="#F6F6F6"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img21"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/clock"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mission_detail21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="도전과제 3"
+                            android:textSize="25dp"
+                            android:layout_toRightOf="@id/img21"
+                            android:layout_marginLeft="30dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/mission_detail22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="운동일지 작성하기"
+                            android:textSize="20dp"
+                            android:layout_below="@id/mission_detail21"
+                            android:layout_toRightOf="@id/img21"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="3dp"
+                            />
+                        <View
+                            android:id="@+id/mission_bar21"
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail22"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn01"
+                    android:backgroundTint="#F6F6F6"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img31"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/check"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mission_detail31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="도전과제 4"
+                            android:textSize="25dp"
+                            android:layout_toRightOf="@id/img31"
+                            android:layout_marginLeft="30dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/mission_detail32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="스쿼트  30회"
+                            android:textSize="20dp"
+                            android:layout_below="@id/mission_detail31"
+                            android:layout_toRightOf="@id/img31"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="3dp"
+                            />
+                        <View
+                            android:id="@+id/mission_bar31"
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail32"
+                            />
+
+                        <View
+                            android:id="@+id/mission_bar32"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@drawable/mission_bar"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/mission_detail32"
+                            android:backgroundTint="#28AE2E"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="30dp"
+                    android:layout_below="@id/l4"
+                    android:layout_marginBottom="30dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

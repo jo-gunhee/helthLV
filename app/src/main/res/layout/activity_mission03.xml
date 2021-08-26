@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:background="#C5E4DC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:id="@+id/sc01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_selectionColor="#F8A429"
+                app:mcv_showOtherDates= "all"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sc01"
+            android:background="@drawable/layout_background"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/blink0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Mission"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/blink0"
+                    android:textSize="35dp"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/btn00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">>"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/text00"
+                    android:layout_below="@id/blink0"
+                    android:textColor="@color/teal_200"
+                    android:background="#00ff0000"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_toLeftOf="@id/btn02"
+                    android:layout_below="@id/text00"
+                    android:background="@drawable/btn01"
+                    android:text="Mission01">
+
+
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@id/text00"
+                    android:background="@drawable/btn01"
+                    android:text="Mission02"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_toRightOf="@id/btn02"
+                    android:layout_below="@id/text00"
+                    android:background="@drawable/btn01"
+                    android:text="Mission03" />
+
+
+                <TextView
+                    android:id="@+id/blink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="30dp"
+                    android:layout_below="@id/btn02"/>
+
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Total Mission"
+                    android:textSize="35dp"
+                    android:layout_below="@+id/blink"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">>"
+                    android:textSize="20dp"
+                    android:layout_below="@id/blink"
+                    android:layout_toRightOf="@+id/text11"
+                    android:textColor="@color/teal_200"
+                    android:background="#00ff0000"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_toLeftOf="@id/btn12"
+                    android:layout_below="@id/text11"
+                    android:background="@drawable/btn01"
+                    android:text="Mission01" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@id/text11"
+                    android:background="@drawable/btn01"
+                    android:text="Mission02"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_toRightOf="@id/btn12"
+                    android:layout_below="@id/text11"
+                    android:background="@drawable/btn01"
+                    android:text="Mission03" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="30dp"
+                    android:layout_below="@id/btn13"
+                    android:layout_marginBottom="30dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
