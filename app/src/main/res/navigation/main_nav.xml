@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.health_project.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_missionFragment"
+            app:destination="@id/missionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/missionFragment"
+        android:name="com.example.health_project.fragments.missionFragment"
+        android:label="fragment_mission"
+        tools:layout="@layout/fragment_mission" >
+        <action
+            android:id="@+id/action_missionFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_missionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_missionFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.health_project.fragments.settingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_missionFragment"
+            app:destination="@id/missionFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.example.health_project.fragments.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_communityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_missionFragment"
+            app:destination="@id/missionFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.example.health_project.levelFragment"
+        android:label="levelFragment" >
+        <action
+            android:id="@+id/action_levelFragment_to_level2Fragment"
+            app:destination="@id/level2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/level2Fragment"
+        android:name="com.example.health_project.level2Fragment"
+        android:label="fragment_level2"
+        tools:layout="@layout/fragment_level2" >
+        <action
+            android:id="@+id/action_level2Fragment_to_missionFragment"
+            app:destination="@id/missionFragment" />
+        <action
+            android:id="@+id/action_level2Fragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_level2Fragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+</navigation>

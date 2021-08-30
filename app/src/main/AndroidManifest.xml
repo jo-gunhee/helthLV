@@ -1,21 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.helthlv">
+    package="com.example.health_project">
+
+    <permission
+        android:name="com.example.health_project.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.health_project.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HelthLV">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Health_project"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".mission.MissionSucces"
+            android:exported="true" />
+
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAMMxTYNGOpesLG6tq1E55_DSnAFYTw8bo" />
+
+        <activity
+            android:name=".setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardListVAdapter"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardinsideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardWriteActivity"
+            android:exported="true" />
+        <activity android:name=".auth.join" />
+        <activity android:name=".auth.login" />
+        <activity android:name=".auth.Intro" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MissionSucces"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
